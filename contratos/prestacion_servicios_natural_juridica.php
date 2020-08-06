@@ -53,7 +53,7 @@ $fecha =  $_POST['fecha'];
 
 
 // Include the main TCPDF library (search for installation path).
-require_once('./TCPDF/tcpdf.php');
+require_once('../TCPDF/tcpdf.php');
 
 
 
