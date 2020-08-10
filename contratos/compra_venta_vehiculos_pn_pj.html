@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Contrato de compra venta vehículo</title>
+      <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1"><link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css'><link rel="stylesheet" href="../style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!-- MultiStep Form -->
+<div class="row">
+    <div class="col-md-6 col-md-offset-3">
+
+        
+        <form action="./compra_venta_vehiculos_pn_pj.php" method="post" id="msform">
+            
+
+            <!-- progressbar -->
+            <ul id="progressbar">
+                <li class="active">Inicio</li>
+                <li>Comparecientes</li>
+                <li>Antecedentes</li>
+                <li>Precio</li>
+                <li>Forma de pago</li>
+            </ul>
+
+
+
+
+            <!-- fieldsets -->
+            <fieldset>
+                <h2 class="fs-title">Inicio</h2>
+                <h3 class="fs-subtitle">Datos iniciales</h3>
+                <input type="text" name="nombreCiudad" placeholder="Ciudad en dónde se hace el contrato"/>
+                <input type="text" name="diaDelMes" placeholder="Día del mes"/>
+                <input type="text" name="mesDelAno" placeholder="Mes del año"/>
+				<input type="text" name="anoContrato" placeholder="Año en números"/>
+                <input type="button" name="next" class="next action-button" value="Next"/>
+            </fieldset>
+
+
+
+
+				     
+            <fieldset>
+                <h2 class="fs-title">Vendedor</h2>
+                <h3 class="fs-subtitle">Información del vendedor</h3>
+                <input type="text" name="nombreVendedor" placeholder="Nombre Completo"/>
+                <input type="text" name="numeroIdentificacionVendedor" placeholder="Número de identificación (pasaporte de nacionalidad XXX/cédula)"/>
+                <input type="text" name="estadoCivilVendedor" placeholder="Estado Civil"/>
+                <input type="text" name="nacionalidadVendedor" placeholder="Nacionalidad"/>
+                <input type="text" name="ciudadDomicilioVendedor" placeholder="Ciudad Domicilio"/>
+                <input type="text" name="domicilioVendedor" placeholder="Domicilio"/>
+               
+            
+                <h2 class="fs-title">Comprador</h2>
+                <h3 class="fs-subtitle">Información del comprador</h3>
+                <input type="text" name="nombreComprador" placeholder="Nombre Completo"/>
+                <input type="text" name="numeroRUCComprador" placeholder="Número de RUC"/>
+                <input type="text" name="RepresentanteLegalComprador" placeholder=" Nombre Completo Representante Legal"/>
+                <input type="text" name="IdentificacionComprador" placeholder="Número de Identificación Representante Legal (pasaporte de nacionalidad XXX/cédula)"/>
+                <input type="text" name="nacionalidadComprador" placeholder="Nacionalidad"/>
+                <input type="text" name="ciudadDomicilioComprador" placeholder="Ciudad Domicilio"/>
+                <input type="text" name="domicilioComprador" placeholder="Domicilio"/>
+                <input type="button" name="previous" class="previous action-button-previous" value="Previous"/>
+                <input type="button" name="next" class="next action-button" value="Next"/>
+            </fieldset>
+
+
+
+
+
+            <fieldset>
+                <h2 class="fs-title">Antecedentes</h2>
+                <h3 class="fs-subtitle">Información del vehículo</h3>
+                <input type="text" name="marca" placeholder="Marca del vehículo"/>
+                <input type="text" name="modelo" placeholder="Modelo del vehículo"/>
+                <input type="text" name="anoVehiculo" placeholder="Año del vehículo"/>
+                <input type="text" name="motor" placeholder="Número de motor del vehículo"/>
+                <input type="text" name="chasis" placeholder="Número de chasis del vehículo"/>
+                <input type="text" name="placas" placeholder="Número de placas del vehículo"/>
+                <input type="text" name="color" placeholder="Color del vehículo"/>
+                <input type="button" name="previous" class="previous action-button-previous" value="Previous"/>
+<input type="button" name="next" class="next action-button" value="Next"/>
+            </fieldset>
+
+
+<fieldset>
+                <h2 class="fs-title">Precio</h2>
+                <h3 class="fs-subtitle">Valor del vehículo</h3>
+                <input type="text" name="montoEnLetras" placeholder="Monto en letras"/>
+                <input type="text" name="montoEnNumeros" placeholder="Monto en números"/>
+                <input type="button" name="previous" class="previous action-button-previous" value="Previous"/>
+<input type="button" name="next" class="next action-button" value="Next"/>
+            </fieldset>
+
+
+
+
+            <fieldset>
+                <h2 class="fs-title">Forma de pago</h2>
+                <h3 class="fs-subtitle">Elige entre las diferentes formas de pago</h3>
+                <input type="text" name="formaDePago" placeholder="Forma de pago"/>
+                <input type="button" name="previous" class="previous action-button-previous" value="Previous"/>
+	            <input type="submit" name="submit" class="submit action-button" value="Generar PDF"/>
+            </fieldset>
+
+
+
+
+
+
+        </form>
+        <!-- link to designify.me code snippets -->
+
+
+    </div>
+</div>
+<!-- /.MultiStep Form -->
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js'></script><script  src="../script.js"></script>
+
+</body>
+</html>

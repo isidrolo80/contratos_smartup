@@ -15,7 +15,7 @@
     <div class="col-md-6 col-md-offset-3">
 
         
-        <form action="./compra_venta_vehiculos.php" method="post" id="msform">
+        <form action="./compra_venta_vehiculos_pn_pn.php" method="post" id="msform">
             
 
             <!-- progressbar -->
@@ -34,7 +34,7 @@
             <fieldset>
                 <h2 class="fs-title">Inicio</h2>
                 <h3 class="fs-subtitle">Datos iniciales</h3>
-                <input type="text" name="nombreCiudad" placeholder="Ciudad en donde se hace el contrato"/>
+                <input type="text" name="nombreCiudad" placeholder="Ciudad en dónde se hace el contrato"/>
                 <input type="text" name="diaDelMes" placeholder="Día del mes"/>
                 <input type="text" name="mesDelAno" placeholder="Mes del año"/>
 				<input type="text" name="anoContrato" placeholder="Año en números"/>
@@ -46,22 +46,24 @@
 
 				     
             <fieldset>
-                <h2 class="fs-title">Comparecientes</h2>
-                <h3 class="fs-subtitle">Información del comprador y vendedor</h3>
-                <input type="text" name="nombreVendedor" placeholder="Nombre completo vendedor"/>
-                <input type="text" name="numeroIdentificacionVendedor" placeholder="Numero de identificacion del vendedor"/>
-                <input type="text" name="estadoCivilVendedor" placeholder="Estado Civil del vendedor"/>
-                <input type="text" name="nacionalidadVendedor" placeholder="Nacionalidad del vendedor"/>
-                <input type="text" name="ciudadDomicilioVendedor" placeholder="Ciudad domicilio vendedor"/>
-                <input type="text" name="domicilioVendedor" placeholder="Domicilio vendedor"/>
-
-
-                <input type="text" name="nombreComprador" placeholder="Nombre completo comprador"/>
-                <input type="text" name="numeroIdentificacionComprador" placeholder="Numero de identificación del comprador"/>
-                <input type="text" name="estadoCivilComprador" placeholder="Estado Civil comprador"/>
-                <input type="text" name="nacionalidadComprador" placeholder="Nacionalidad Comprador"/>
-                <input type="text" name="ciudadDomicilioComprador" placeholder="Ciudad Domicilio comprador"/>
-                <input type="text" name="domicilioComprador" placeholder="Domicilio comprador"/>
+                <h2 class="fs-title">Vendedor</h2>
+                <h3 class="fs-subtitle">Información del vendedor</h3>
+                <input type="text" name="nombreVendedor" placeholder="Nombre Completo"/>
+                <input type="text" name="numeroIdentificacionVendedor" placeholder="Número de identificación (pasaporte de nacionalidad XXX/cédula)"/>
+                <input type="text" name="estadoCivilVendedor" placeholder="Estado Civil"/>
+                <input type="text" name="nacionalidadVendedor" placeholder="Nacionalidad"/>
+                <input type="text" name="ciudadDomicilioVendedor" placeholder="Ciudad Domicilio"/>
+                <input type="text" name="domicilioVendedor" placeholder="Domicilio"/>
+               
+            
+                <h2 class="fs-title">Comprador</h2>
+                <h3 class="fs-subtitle">Información del comprador</h3>
+               <input type="text" name="nombreComprador" placeholder="Nombre Completo"/>
+                <input type="text" name="numeroIdentificacionComprador" placeholder="Número de identificación (pasaporte de nacionalidad XXX/cédula)"/>
+                <input type="text" name="estadoCivilComprador" placeholder="Estado Civil"/>
+                <input type="text" name="nacionalidadComprador" placeholder="Nacionalidad"/>
+                <input type="text" name="ciudadDomicilioComprador" placeholder="Ciudad Domicilio"/>
+                <input type="text" name="domicilioComprador" placeholder="Domicilio"/>
                 <input type="button" name="previous" class="previous action-button-previous" value="Previous"/>
                 <input type="button" name="next" class="next action-button" value="Next"/>
             </fieldset>
@@ -89,7 +91,7 @@
                 <h2 class="fs-title">Precio</h2>
                 <h3 class="fs-subtitle">Valor del vehículo</h3>
                 <input type="text" name="montoEnLetras" placeholder="Monto en letras"/>
-                <input type="text" name="montoEnNumeros" placeholder="Monto en numeros"/>
+                <input type="text" name="montoEnNumeros" placeholder="Monto en números"/>
                 <input type="button" name="previous" class="previous action-button-previous" value="Previous"/>
 <input type="button" name="next" class="next action-button" value="Next"/>
             </fieldset>
