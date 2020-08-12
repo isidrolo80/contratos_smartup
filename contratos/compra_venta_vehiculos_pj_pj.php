@@ -33,19 +33,19 @@ $anoContrato = $_POST['anoContrato'];
 
 //Comparecientes
 $nombreVendedor =  $_POST['nombreVendedor'];
-$numeroIdentificacionVendedor =  $_POST['numeroIdentificacionVendedor'];
-$estadoCivilVendedor =  $_POST['estadoCivilVendedor'];
-$nacionalidadVendedor =  $_POST['nacionalidadVendedor'];
-$ciudadDomicilioVendedor =  $_POST['ciudadDomicilioVendedor'];
-$domicilioVendedor =  $_POST['domicilioVendedor'];
-
+$numeroRUCVendedor =  $_POST['numeroRUCVendedor'];
+$RepresentanteLegalVendedor =  $_POST['RepresentanteLegalVendedor'];
+$identificacionRepresentante1 = $_POST['identificacionRepresentante1'];
+$CedulaRepresentante1 = $_POST['CedulaRepresentante1'];
 
 $nombreComprador =  $_POST['nombreComprador'];
-$numeroIdentificacionComprador =  $_POST['numeroIdentificacionComprador'];
-$estadoCivilComprador =  $_POST['estadoCivilComprador'];
-$nacionalidadComprador =  $_POST['nacionalidadComprador'];
-$ciudadDomicilioComprador =  $_POST['ciudadDomicilioComprador'];
-$domicilioComprador =  $_POST['domicilioComprador'];
+$numeroRUCComprador =  $_POST['numeroRUCComprador'];
+$RepresentanteLegalComprador =  $_POST['RepresentanteLegalComprador'];
+$identificacionRepresentante2 = $_POST['identificacionRepresentante2'];
+$CedulaRepresentante2 = $_POST['CedulaRepresentante2'];
+
+
+
 
 //Antecedentes
 $marca =  $_POST['marca'];
@@ -130,8 +130,8 @@ $html = '
 <p style="padding-left: 30px;">En la ciudad de '.$nombreCiudad.', a los '.$diaDelMes.' d&iacute;as del mes de '.$mesDelAno.' de '.$anoContrato.', las partes de forma libre y voluntaria suscriben el presente contrato.</p>
 <h3 style="text-align: center;">I. COMPARECIENTES</h3>
 <ol>
-<li style="text-align: justify;">Por una parte, '.$nombreVendedor.', con c&eacute;dula de ciudadan&iacute;a No. '.$numeroIdentificacionVendedor.', de estado civil '.$estadoCivilVendedor.', nacionalidad '.$nacionalidadVendedor.', residente en la ciudad de '.$ciudadDomicilioVendedor.' y con domicilio en '.$domicilioVendedor.', por sus propios y personales derechos a quien para efectos del presente contrato se le denominar&aacute; &ldquo;VENDEDOR&rdquo;; y,</li>
-<li style="text-align: justify;">Por otra parte, '.$nombreComprador.', con c&eacute;dula de ciudadan&iacute;a No. '.$numeroIdentificacionComprador.', de estado civil '.$estadoCivilComprador.', nacionalidad '.$nacionalidadComprador.', residente en la ciudad de '.$ciudadDomicilioComprador.' y con domicilio en '.$domicilioComprador.', por sus propios y personales derechos, a quien para los efectos del presente contrato se le denominar&aacute; &ldquo;COMPRADOR&rdquo;</li>
+<li style="text-align: justify;">Por una parte, '.$nombreVendedor.', con número de RUC. '.$numeroRUCVendedor.', mediante su Representante legal, '.$RepresentanteLegalVendedor.', con '.$identificacionRepresentante1.', número '.$CedulaRepresentante1.' a quien para efectos del presente contrato se le denominar&aacute; &ldquo;VENDEDOR&rdquo;; y,</li>
+<li style="text-align: justify;">Por otra parte, '.$nombreComprador.', con número de RUC. '.$numeroRUCComprador.', mediante su Representante legal, '.$RepresentanteLegalComprador.', con '.$identificacionRepresentante2.', número '.$CedulaRepresentante2.', a quien para los efectos del presente contrato se le denominar&aacute; &ldquo;COMPRADOR&rdquo;</li>
 </ol>
 <h3 style="text-align: center;">II. ANTECEDENTES</h3>
 <ol>
@@ -149,12 +149,12 @@ $html = '
 <h3 style="text-align: center;">III. OBJETO</h3>
 <ol>
 <li>Las partes de com&uacute;n acuerdo y por su convenir a sus intereses celebran el presente contrato de compraventa de veh&iacute;culo.</li>
-<li>EL VENDEDOR da en venta y perpetua enajenaci&oacute;n a favor de EL COMPRADORA, el veh&iacute;culo descrito en la cl&aacute;usula II del presente contrato.</li>
+<li>EL VENDEDOR da en venta y perpetua enajenaci&oacute;n a favor de EL COMPRADOR, el veh&iacute;culo descrito en la cl&aacute;usula II del presente contrato.</li>
 <li>EL VENDEDOR se compromete a efectuar la entrega de toda la documentaci&oacute;n inherente al veh&iacute;culo para efectos del traspaso de dominio.</li>
 </ol>
 <h3 style="text-align: center;">IV. DECLARACI&Oacute;N</h3>
 <ol>
-<li style="text-align: justify;">EL COMPRADORA declara que recibe el veh&iacute;culo en perfectas condiciones y que ha sido revisado recibiendolo en perfecto estado, renunciando a reclamos por vicios redivitorios. &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</li>
+<li style="text-align: justify;">EL COMPRADOR declara que recibe el veh&iacute;culo en perfectas condiciones y que ha sido revisado recibiendolo en perfecto estado, renunciando a reclamos por vicios redivitorios. &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</li>
 </ol>
 <h3 style="text-align: center;">V. PRECIO&nbsp;</h3>
 <ol>
@@ -182,10 +182,10 @@ $html = '
 </tr>
 <tr style="height: 33.15625px;">
 <td style="width: 278px; height: 33.15625px;">
-<p style="padding-left: 60px; text-align: center">'.$numeroIdentificacionVendedor.'</p>
+<p style="padding-left: 60px; text-align: center">'.$numeroRUCVendedor.'</p>
 </td>
 <td style="width: 303.5px; height: 33.15625px;">
-<p style="padding-left: 90px; text-align: center">'.$numeroIdentificacionComprador.'</p>
+<p style="padding-left: 90px; text-align: center">'.$numeroRUCComprador.'</p>
 </td>
 </tr>
 </tbody>

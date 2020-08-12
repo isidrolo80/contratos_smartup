@@ -15,7 +15,7 @@
     <div class="col-md-6 col-md-offset-3">
 
         
-        <form action="./compra_venta_vehiculos.php" method="post" id="msform">
+        <form action="./compra_venta_vehiculos_pj_pj.php" method="post" id="msform">
             
 
             <!-- progressbar -->
@@ -51,11 +51,16 @@
                 <input type="text" name="nombreVendedor" placeholder="Nombre Completo"/>
                 <input type="text" name="numeroRUCVendedor" placeholder="Número de RUC"/>
                 <input type="text" name="RepresentanteLegalVendedor" placeholder=" Nombre Completo Representante Legal"/>
-                <input type="text" name="IdentificaciónVendedor" placeholder="Número de Identificación Representante Legal (pasaporte de nacionalidad XXX/cédula)"/>
-                <input type="text" name="nacionalidadVendedor" placeholder="Nacionalidad"/>
-                <input type="text" name="ciudadDomicilioVendedor" placeholder="Ciudad Domicilio"/>
-                <input type="text" name="domicilioVendedor" placeholder="Domicilio"/>
 
+                <div class="form-group">
+                <label for="identificacionRepresentante">Identificacion del representante legal</label>
+                <select class="form-control" id="identificacionRepresentante" name="identificacionRepresentante1">
+                  <option label="Pasaporte" value="Pasaporte">Pasaporte</option>
+                  <option label="Cedula" value="Cedula">Cedula</option>
+                </select>
+              </div>
+
+                <input type="text" name="CedulaRepresentante1" placeholder="Número de Identificación"/>
                
             
                 <h2 class="fs-title">Comprador</h2>
@@ -63,10 +68,17 @@
                 <input type="text" name="nombreComprador" placeholder="Nombre Completo"/>
                 <input type="text" name="numeroRUCComprador" placeholder="Número de RUC"/>
                 <input type="text" name="RepresentanteLegalComprador" placeholder=" Nombre Completo Representante Legal"/>
-                <input type="text" name="IdentificaciónComprador" placeholder="Número de Identificación Representante Legal (pasaporte de nacionalidad XXX/cédula)"/>
-                <input type="text" name="nacionalidadComprador" placeholder="Nacionalidad"/>
-                <input type="text" name="ciudadDomicilioComprador" placeholder="Ciudad Domicilio"/>
-                <input type="text" name="domicilioComprador" placeholder="Domicilio"/>
+                <div class="form-group">
+                <label for="identificacionRepresentante">Identificacion del representante legal</label>
+                <select class="form-control" id="identificacionRepresentante" name="identificacionRepresentante2">
+                  <option label="Pasaporte" value="Pasaporte">Pasaporte</option>
+                  <option label="Cedula" value="Cedula">Cedula</option>
+                </select>
+              </div>
+              
+                <input type="text" name="CedulaRepresentante2" placeholder="Número de Identificación"/>
+
+
                 <input type="button" name="previous" class="previous action-button-previous" value="Previous"/>
                 <input type="button" name="next" class="next action-button" value="Next"/>
             </fieldset>
