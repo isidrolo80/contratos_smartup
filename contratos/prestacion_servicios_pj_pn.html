@@ -2,7 +2,7 @@
 <html lang="en" >
 <head>
   <meta charset="UTF-8">
-  <title>Formulario CSP (PJ-PN)</title>
+  <title>SmartUp - Prestación de servicios (PJ-PN)</title>
       <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1"><link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css'><link rel="stylesheet" href="../style.css">
@@ -15,12 +15,12 @@
     <div class="col-md-6 col-md-offset-3">
 
         
-        <form action="./prestacion_servicios_natural_juridica.php" method="post" id="msform">
+        <form action="./prestacion_servicios_pj_pn.php" method="post" id="msform">
             
 
             <!-- progressbar -->
             <ul id="progressbar">
-                <li class="active">Persona Juridica</li>
+                <li class="active">Persona Jurídica</li>
                 <li>Persona Natural</li>
                 <li>Objeto</li>
                 <li>Forma de pago</li>
@@ -35,16 +35,18 @@
                 <h2 class="fs-title">Persona Juridica</h2>
                 <h3 class="fs-subtitle">Cuentanos un poco de la persona juridica</h3>
                 <input type="text" name="nombrePersonaJuridica" placeholder="Nombre Persona Juridica"/>
+                <input type="text" name="ciudadDomicilio1" placeholder="Ciudad domicilio de la compañía"/>
                 <input type="text" name="RUC" placeholder="RUC"/>
                 <input type="text" name="representanteLegal" placeholder="Representante Legal"/>
-						<div class="form-group">
 
+				<div class="form-group">
                 <label for="identificacionRepresentante">Identificacion del representante legal</label>
                 <select class="form-control" id="identificacionRepresentante" name="identificacionRepresentante">
                   <option label="Pasaporte" value="Pasaporte">Pasaporte</option>
                   <option label="Cedula" value="Cedula">Cedula</option>
                 </select>
-              </div>
+                </div>
+
 				<input type="text" name="numeroIdentificacionRepresentante" placeholder="Numero de identificacion del representante legal"/>
                 <input type="button" name="next" class="next action-button" value="Next"/>
             </fieldset>
@@ -57,14 +59,18 @@
                 <h2 class="fs-title">Persona Natural</h2>
                 <h3 class="fs-subtitle">Cuentanos un poco de la persona natural</h3>
                 <input type="text" name="nombrePersonaNatural" placeholder="Nombre de la persona natural"/>
-					<div class="form-group">
-    <label for="identificacionPersonaNatural">Identificacion de la persona natural</label>
-    <select class="form-control" id="identificacionPersonaNatural" name="identificacionPersonaNatural">
-      <option name="identificacionPersonaNatural" value="Pasaporte">Pasaporte</option>
-      <option name="identificacionPersonaNatural" value="Cedula">Cedula</option>
-    </select>
-  </div>	
+				<div class="form-group">
+                    <label for="identificacionPersonaNatural">Identificacion de la persona natural</label>
+                    <select class="form-control" id="identificacionPersonaNatural" name="identificacionPersonaNatural">
+                        <option name="identificacionPersonaNatural" value="pasaporte">Pasaporte</option>
+                        <option name="identificacionPersonaNatural" value="cédula">Cedula</option>
+                    </select>
+                </div>	
                 <input type="text" name="numeroIdentificacionPersonaNatural" placeholder="Numero de identificacion"/>
+                <input type="text" name="estadoCivil" placeholder="Estado Civil"/>
+                <input type="text" name="nacionalidad" placeholder="Nacionalidad"/>
+                <input type="text" name="ciudadDomicilio2" placeholder="Ciudad de domicilio"/>
+                <input type="text" name="direccion" placeholder="Dirección de domicilio"/>
                 <input type="button" name="previous" class="previous action-button-previous" value="Previous"/>
                 <input type="button" name="next" class="next action-button" value="Next"/>
             </fieldset>
@@ -78,11 +84,11 @@
                 <h3 class="fs-subtitle">Cuentanos un poco del objeto</h3>
                 <input type="text" name="nombreServicioProfesional" placeholder="Que servicio profesional se va a ofrecer"/>
                 <input type="button" name="previous" class="previous action-button-previous" value="Previous"/>
-<input type="button" name="next" class="next action-button" value="Next"/>
+                <input type="button" name="next" class="next action-button" value="Next"/>
             </fieldset>
 
 
-<fieldset>
+            <fieldset>
                 <h2 class="fs-title">Forma de pago</h2>
                 <h3 class="fs-subtitle">Cuentanos un poco de la forma de pago</h3>
                 <input type="text" name="montoEnLetras" placeholder="Monto en letras"/>
@@ -91,7 +97,7 @@
                 <input type="text" name="plazoContrato" placeholder="Plazo del contrato en meses"/>
 
                 <input type="button" name="previous" class="previous action-button-previous" value="Previous"/>
-<input type="button" name="next" class="next action-button" value="Next"/>
+                <input type="button" name="next" class="next action-button" value="Next"/>
             </fieldset>
 
 

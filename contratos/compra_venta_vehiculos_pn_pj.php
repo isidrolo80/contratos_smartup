@@ -34,6 +34,7 @@ $anoContrato = $_POST['anoContrato'];
 //Comparecientes
 $nombreVendedor =  $_POST['nombreVendedor'];
 $numeroIdentificacionVendedor =  $_POST['numeroIdentificacionVendedor'];
+$identificacionRepresentante1 =  $_POST['identificacionRepresentante1'];
 $estadoCivilVendedor =  $_POST['estadoCivilVendedor'];
 $nacionalidadVendedor =  $_POST['nacionalidadVendedor'];
 $ciudadDomicilioVendedor =  $_POST['ciudadDomicilioVendedor'];
@@ -46,7 +47,6 @@ $RepresentanteLegalComprador = $_POST ['RepresentanteLegalComprador'];
 $IdentificacionComprador =  $_POST['IdentificacionComprador'];
 $nacionalidadComprador =  $_POST['nacionalidadComprador'];
 $ciudadDomicilioComprador =  $_POST['ciudadDomicilioComprador'];
-$domicilioComprador =  $_POST['domicilioComprador'];
  
 //Antecedentes
 $marca =  $_POST['marca'];
@@ -124,55 +124,55 @@ $pdf->SetFont('helvetica', 'B', 20);
 
 
 // create some HTML content
-$html = '<h1 style="text-align: center;"><strong>CONTRATO DE COMPRAVENTA DE VEH&Iacute;CULO</strong></h1>
-<p>&nbsp;En la ciudad de '.$nombreCiudad.', a los '.$diaDelMes.' d&iacute;as del mes de '.$mesDelAno.' de '.$anoContrato.', las partes de forma libre y voluntaria suscriben el presente contrato:</p>
-<h1 style="text-align: center;"><span style="text-decoration: underline;">I. COMPARECIENTES</span></h1>
-<p><strong>1.1.</strong> Por una parte, '.$nombreVendedor.', por sus propios y personales derechos a quien para efectos del presente contrato se le denominar&aacute; &ldquo;VENDEDOR&rdquo;; y,</p>
-<p><strong>1.2.</strong> Por otra parte, '.$nombreComprador.' con n&uacute;mero de RUC '.$numeroRUCComprador.', mediante su '.$RepresentanteLegalComprador.', con (pasaporte de nacionalidad XXXXXX/c&eacute;dula) n&uacute;mero '.$IdentificacionComprador.' a quien para los efectos del presente contrato se le denominar&aacute; &ldquo;COMPRADOR&rdquo;.</p>
-<h1 style="text-align: center;"><span style="text-decoration: underline;">II. ANTECEDENTES</span></h1>
+$html = '
+
+<p style="text-align: center;"><strong>CONTRATO DE COMPRAVENTA DE VEH&Iacute;CULO</strong></p>
+<p>En la ciudad de '.$nombreCiudad.', a los '.$diaDelMes.' d&iacute;as del mes de '.$mesDelAno.' de '.$anoContrato.', las partes de forma libre y voluntaria suscriben el presente contrato:</p>
+<p style="text-align: center;"><strong> I.&nbsp;<u>COMPARECIENTES</u></strong></p>
+<p><strong>1.1</strong>. Por una parte, '.$nombreVendedor.', con '.$identificacionRepresentante1.' de identidad No. '.$numeroIdentificacionVendedor.', de estado civil '.$estadoCivilVendedor.', nacionalidad '.$nacionalidadVendedor.', con domicilio en la ciudad de '.$ciudadDomicilioVendedor.' y con direcci&oacute;n en '.$domicilioVendedor.', por sus propios y personales derechos a quien para efectos del presente contrato se le denominar&aacute; &ldquo;VENDEDOR&rdquo;; y,</p>
+<p><strong>1.2.</strong> Por otra parte, '.$nombreComprador.', domiciliada en '.$ciudadDomicilioComprador.', con n&uacute;mero de RUC No. '.$numeroRUCComprador.', mediante su representante legal '.$RepresentanteLegalComprador.', con pasaporte/c&eacute;dula de identidad No. '.$IdentificacionComprador.' a quien para los efectos del presente contrato se le denominar&aacute; &ldquo;COMPRADOR&rdquo;.</p>
+<p style="text-align: center;"><strong>II. <u>ANTECEDENTES</u></strong></p>
 <p><strong>2.1.</strong> El VENDEDOR, es propietario del veh&iacute;culo de las siguientes caracter&iacute;sticas:</p>
-<p style="padding-left: 30px;"><strong>2.1.1.</strong> Marca: '.$marca.'</p>
-<p style="padding-left: 30px;"><strong>2.1.2.</strong> Modelo: '.$modelo.'</p>
-<p style="padding-left: 30px;"><strong>2.1.3.</strong> A&ntilde;o: '.$anoVehiculo.'</p>
-<p style="padding-left: 30px;"><strong>2.1.4.</strong> Motor N&ordm;: '.$motor.'</p>
-<p style="padding-left: 30px;"><strong>2.1.5.</strong> Chasis: '.$chasis.'</p>
-<p style="padding-left: 30px;"><strong>2.1.6.</strong> Placas: '.$placas.'</p>
-<p style="padding-left: 30px;"><strong>2.1.7. </strong>Color: '.$color.'</p>
-<p><strong>2.2.</strong> El VENDEDOR declara que sobre el veh&iacute;culo de su propiedad no pesa gravamen alguno, prohibici&oacute;n de enajenar.</p>
-<p><strong>2.3.</strong> El VENDEDOR declara que el veh&iacute;culo se encuentra en perfecto estado y que peri&oacute;dicamente ha sido sujeto de mantenimientos y chequeos mec&aacute;nicos para su &oacute;ptimo funcionamiento.</p>
-<h1 style="text-align: center;"><span style="text-decoration: underline;">III. OBJETO</span></h1>
+<ol>
+<li><b>Marca:</b> '.$marca.'</li>
+<li><b>Modelo:</b> '.$modelo.'</li>
+<li><b>A&ntilde;o:</b>'.$anoVehiculo.'</li>
+<li><b>Motor N&ordm;: </b>'.$motor.' </li>
+<li><b>Chasis:</b>'.$chasis.'</li>
+<li><b>Placas:</b>'.$placas.'</li>
+<li><b>Color:</b>'.$color.'</li>
+</ol>
+<p><strong>2.2.</strong>&nbsp;El VENDEDOR declara que sobre el veh&iacute;culo de su propiedad no pesa gravamen alguno ni prohibici&oacute;n de enajenar.</p>
+<p><strong>2.3.</strong>&nbsp;El VENDEDOR declara que el veh&iacute;culo se encuentra en perfecto estado y que peri&oacute;dicamente ha sido sujeto de mantenimientos y chequeos mec&aacute;nicos para su &oacute;ptimo funcionamiento.</p>
+<p style="text-align: center;"><strong>III.&nbsp;<u>OBJETO</u></strong></p>
 <p><strong>3.1.</strong> Las partes de com&uacute;n acuerdo y por su convenir a sus intereses celebran el presente contrato de compraventa de veh&iacute;culo.</p>
-<p><strong>3.2.</strong> El VENDEDOR da en venta y perpetua enajenaci&oacute;n, a favor del COMPRADOR, el veh&iacute;culo descrito en la cl&aacute;usula II del presente contrato.</p>
-<p><strong>3.3.</strong> El VENDEDOR se compromete a efectuar la entrega de toda la documentaci&oacute;n inherente al veh&iacute;culo para efectos del traspaso de dominio.</p>
-<h1 style="text-align: center;"><span style="text-decoration: underline;">IV. DECLARACI&Oacute;N</span></h1>
-<p><strong>4.1.</strong> El COMPRADOR declara que recibe el veh&iacute;culo en perfectas condiciones y que ha sido revisado recibi&eacute;ndolo en perfecto estado, renunciando a reclamos por vicios redhibitorios.</p>
-<h1 style="text-align: center;"><span style="text-decoration: underline;">V. PRECIO</span></h1>
-<p style="text-align: justify;"><strong>5.1.</strong> El precio del objeto del presente contrato es de '.$montoEnLetras.' D&Oacute;LARES DE LOS ESTADOS UNIDOS DE AM&Eacute;RICA '.$montoEnNumeros.' que el COMPRADOR entrega al VENDEDOR en '.$formaDePago.' y a su entera satisfacci&oacute;n.</p>
-<h1 style="text-align: center;"><span style="text-decoration: underline;">VI. RATIFICACI&Oacute;N</span></h1>
-<p style="text-align: justify;"><strong>6.1.</strong> Las partes aceptan la vigencia y validez del presente instrumento por contener estipulaciones hechas en sus mutuos beneficios e intereses y en la buena fe de que se cumplir&aacute;n cada una con las obligaciones asumidas, para constancia de lo cual y fiel cumplimiento de lo estipulado, firman en dos ejemplares de igual tenor y valor.</p>
-<p style="text-align: justify;">&nbsp;</p>
-<p style="text-align: center;">&nbsp;</p>
-<p style="text-align: center;">&nbsp;</p>
-<table style="margin-left: auto; margin-right: auto;">
+<p><strong>3.2.</strong> El VENDEDOR da en venta y perpetua enajenaci&oacute;n a favor del COMPRADOR, el veh&iacute;culo descrito en la cl&aacute;usula II del presente contrato. Adem&aacute;s, el VENDEDOR se compromete a efectuar la entrega de toda la documentaci&oacute;n inherente al veh&iacute;culo para efectos del traspaso de dominio.</p>
+<p><strong>3.3.</strong> Por su parte, el COMPRADOR se obliga a pagar la totalidad del precio pactado.</p>
+<p style="text-align: center;"><strong>IV.&nbsp;<u>DECLARACI&Oacute;N</u></strong></p>
+<p><strong>4.1.</strong> El COMPRADOR declara que ha revisado el veh&iacute;culo y que este se encuentra en perfectas condiciones, renunciando a reclamos por vicios redhibitorios.</p>
+<p style="text-align: center;"><strong>V.&nbsp;<u>PRECIO</u></strong></p>
+<p><strong>5.1.</strong> El precio del objeto del presente contrato es de '.$montoEnLetras.' D&Oacute;LARES DE LOS ESTADOS UNIDOS DE AM&Eacute;RICA $'.$montoEnNumeros.' que el COMPRADOR entrega al VENDEDOR en '.$formaDePago.' y a su entera satisfacci&oacute;n.</p>
+<p style="text-align: center;"><strong>VI.&nbsp;<u>RATIFICACI&Oacute;N</u></strong></p>
+<p><strong>6.1.</strong>&nbsp;Las partes aceptan la vigencia y validez del presente instrumento por contener estipulaciones hechas en sus mutuos beneficios e intereses y en la buena fe de que se cumplir&aacute;n cada una con las obligaciones asumidas, para constancia de lo cual y fiel cumplimiento de lo estipulado, firman en dos ejemplares de igual tenor y valor.</p>
+<p>&nbsp;</p>
+<table style="margin-left: auto; margin-right: auto;" width="552">
 <tbody>
 <tr>
-<td width="278">
-<h3>'.$nombreVendedor.'</h3>
+<td style="text-align: center;" width="278">
+<p>&nbsp;</p>
+<p><span style="background-color: #ffff00;"><strong>'.$nombreVendedor.'</strong></span></p>
+<p>'.$identificacionRepresentante1.': '.$numeroIdentificacionVendedor.'</p>
 </td>
-<td width="279">
-<h3>'.$nombreComprador.'</h3>
-</td>
-</tr>
-<tr>
-<td width="278">
-<h3>'.$numeroIdentificacionVendedor.'</h3>
-</td>
-<td width="279">
-<h3>'.$IdentificacionComprador.'</h3>
+<td style="text-align: center;" width="274">
+<p>&nbsp;</p>
+<p><span style="background-color: #ffff00;"><strong>'.$RepresentanteLegalComprador.'</strong></span></p>
+<p>Representante Legal de '.$nombreComprador.' RUC No. '.$numeroRUCComprador.'</p>
 </td>
 </tr>
 </tbody>
-</table>';
+</table>
+
+';
 
 // set core font
 $pdf->SetFont('helvetica', '', 10);
