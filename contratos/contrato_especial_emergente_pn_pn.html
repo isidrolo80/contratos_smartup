@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>SmartUp - Contrato Especial Emergente PJ - PN</title>
+      <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1"><link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css'><link rel="stylesheet" href="../style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!-- MultiStep Form -->
+<div class="row">
+    <div class="col-md-6 col-md-offset-3">
+
+        
+        <form action="./contrato_especial_emergente_pn_pn.php" method="post" id="msform">
+            
+
+            <!-- progressbar -->
+            <ul id="progressbar">
+                <li class="active">Información del contratante</li>
+                <li>Información del contratado</li>
+                <li>Objeto y Obligaciones</li>
+                <li>Jornada y Remuneración</li>
+                <li>Datos finales</li>
+            </ul>
+
+
+
+
+            <!-- fieldsets -->
+            <fieldset>
+                <h2 class="fs-title">Persona Natural</h2>
+                <h3 class="fs-subtitle">Cuentanos un poco de la persona contratante</h3>
+                <input type="text" name="nombrePersonaNatural1" placeholder="Nombre de la persona natural contratante"/>
+                <div class="form-group">
+                    <label for="identificacionPersonaNatural">Identificacion de la persona natural</label>
+                    <select class="form-control" id="identificacionPersonaNatural1" name="identificacionPersonaNatural1">
+                        <option name="identificacionPersonaNatural1" value="pasaporte">Pasaporte</option>
+                        <option name="identificacionPersonaNatural1" value="cédula">Cedula</option>
+                    </select>
+                </div>  
+                <input type="text" name="numeroIdentificacionPersonaNatural1" placeholder="Numero de identificacion"/>
+                <input type="text" name="estadoCivil1" placeholder="Estado Civil"/>
+                <input type="text" name="nacionalidad1" placeholder="Nacionalidad"/>
+                <input type="text" name="ciudadDomicilio1" placeholder="Ciudad de domicilio"/>
+                <input type="text" name="direccion1" placeholder="Dirección de domicilio"/>
+                <input type="button" name="previous" class="previous action-button-previous" value="Previous"/>
+                <input type="button" name="next" class="next action-button" value="Next"/>
+            </fieldset>
+
+
+
+
+				     
+            <fieldset>
+                <h2 class="fs-title">Persona Natural</h2>
+                <h3 class="fs-subtitle">Cuentanos un poco de la persona contratada</h3>
+                <input type="text" name="nombrePersonaNatural2" placeholder="Nombre de la persona natural contratada"/>
+				<div class="form-group">
+                    <label for="identificacionPersonaNatural2">Identificacion de la persona natural</label>
+                    <select class="form-control" id="identificacionPersonaNatural2" name="identificacionPersonaNatural2">
+                        <option name="identificacionPersonaNatural2" value="pasaporte">Pasaporte</option>
+                        <option name="identificacionPersonaNatural2" value="cédula">Cedula</option>
+                    </select>
+                </div>	
+                <input type="text" name="numeroIdentificacionPersonaNatural2" placeholder="Numero de identificacion"/>
+                <input type="text" name="estadoCivil2" placeholder="Estado Civil"/>
+                <input type="text" name="nacionalidad2" placeholder="Nacionalidad"/>
+                <input type="text" name="ciudadDomicilio2" placeholder="Ciudad de domicilio"/>
+                <input type="text" name="direccion2" placeholder="Dirección de domicilio"/>
+                <input type="button" name="previous" class="previous action-button-previous" value="Previous"/>
+                <input type="button" name="next" class="next action-button" value="Next"/>
+            </fieldset>
+
+
+
+
+
+            <fieldset>
+                <h2 class="fs-title">Objeto</h2>
+                <h3 class="fs-subtitle">Cuentanos un poco de la función</h3>
+                <input type="text" name="cargoADesempenar" placeholder="Que cargo va a ocupar el contratado"/>
+                <input type="button" name="previous" class="previous action-button-previous" value="Previous"/>
+                <input type="button" name="next" class="next action-button" value="Next"/>
+            </fieldset>
+
+
+            <fieldset>
+                <h2 class="fs-title">Jornada y remuneración</h2>
+                <h3 class="fs-subtitle">Cuentanos un poco de la jornada y remuneración</h3>
+                <div class="form-group">
+                <label for="tipoDeJornada">Tipo de jornada</label>
+                <select class="form-control" id="tipoDeJornada" name="tipoDeJornada">
+                  <option label="Completa" value="completa">Jornada Completa</option>
+                  <option label="Parcial" value="parcial">Jornada Parcial</option>
+                </select>
+                </div>
+                <select class="form-control" id="numeroDeHoras" name="numeroDeHoras">
+                  <option label="Completa" value="40">40 horas</option>
+                  <option label="Parcial" value="20">20 horas</option>
+                </select>
+                <input type="text" name="sueldoEnLetras" placeholder="Sueldo en letras"/>
+                <input type="text" name="sueldoEnNumeros" placeholder="Sueldo en numeros"/>
+                <input type="text" name="numeroDeHorasDiarias" placeholder="Número de horas diarias"/>
+                <input type="text" name="numeroDeDias" placeholder="Número de días a la semana"/>
+
+                <input type="button" name="previous" class="previous action-button-previous" value="Previous"/>
+                <input type="button" name="next" class="next action-button" value="Next"/>
+            </fieldset>
+
+
+
+
+            <fieldset>
+                <h2 class="fs-title">Datos finales</h2>
+                <h3 class="fs-subtitle">Esto es lo ultimo</h3>
+                <input type="text" name="direccionTrabajo" placeholder="Dirección del lugar donde se va a laborar"/>
+                <input type="text" name="ciudadTrabajo" placeholder="Ciudad del lugar donde se va a laborar"/>
+                <input type="text" name="provinciaTrabajo" placeholder="Provincia del lugar donde se va a laborar"/>
+                <input type="text" name="ciudad" placeholder="Ciudad donde se celebra el contrato"/>
+                <input type="datetime" name="fecha" placeholder="Fecha de firma del contrato"/>
+                <input type="button" name="previous" class="previous action-button-previous" value="Previous"/>
+	            <input type="submit" name="submit" class="submit action-button" value="Generar PDF"/>
+            </fieldset>
+
+
+
+
+
+
+        </form>
+        <!-- link to designify.me code snippets -->
+
+
+    </div>
+</div>
+<!-- /.MultiStep Form -->
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js'></script><script  src="../script.js"></script>
+
+</body>
+</html>
