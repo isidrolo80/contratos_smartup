@@ -137,10 +137,10 @@ $html = '
 <p>3.1. Con respecto a las obligaciones, derechos y prohibiciones del EMPLEADOR y El TRABAJADOR, estos estar&aacute;n sujetos a lo estrictamente dispuesto en el Cap&iacute;tulo IV, De las obligaciones del EMPLEADOR y del TRABAJADOR, del C&oacute;digo del Trabajo, y a las dem&aacute;s obligaciones dispuestas en el presente Contrato Especial Emergente.</p>
 <p>3.2. A parte de lo enunciado en el ac&aacute;pite anterior, El TRABAJADOR estar&aacute; obligado a lo siguiente:</p>
 <ol>
-<li>Ejecutar las funciones para las cuales fue contratada, bajo los lineamientos t&eacute;cnicos y dem&aacute;s condiciones, determinadas por El EMPLEADOR, oblig&aacute;ndose a cumplir las disposiciones verbales o escritas que le determine.</li>
+<li>Ejecutar las funciones para las cuales fue contratado, bajo los lineamientos t&eacute;cnicos y dem&aacute;s condiciones, determinadas por El EMPLEADOR, oblig&aacute;ndose a cumplir las disposiciones verbales o escritas que le determine.</li>
 <li>Ejecutar su labor con total profesionalismo, incorporando al servicio de El EMPLEADOR todos sus conocimientos y diligencia como '.$cargoADesempenar.'.</li>
 <li>Durante la vigencia del presente contrato, El TRABAJADOR se obliga a laborar exclusivamente para El EMPLEADOR, sin que pueda realizar otras funciones ni por cuenta propia, ni por cuenta de terceros.</li>
-<li>El TRABAJADOR ser&aacute; responsable de todo da&ntilde;o o p&eacute;rdida que ocasione, incluyendo el proveniente del no uso de las medidas de seguridad que El EMPLEADOR imponga para el cuidado y protecci&oacute;n de El TRABAJADOR, como de los dem&aacute;s TRABAJADORes.</li>
+<li>El TRABAJADOR ser&aacute; responsable de todo da&ntilde;o o p&eacute;rdida que ocasione, incluyendo el proveniente del no uso de las medidas de seguridad que El EMPLEADOR imponga para el cuidado y protecci&oacute;n de El TRABAJADOR, como de los dem&aacute;s TRABAJADORES.</li>
 <li>El TRABAJADOR tiene la obligaci&oacute;n de entregar todo equipo, documento, informaci&oacute;n, respaldos, materiales, herramientas, y dem&aacute;s, que sean de propiedad del EMPLEADOR, una vez terminado el contrato de trabajo bajo cualquiera de las formas establecidas en el C&oacute;digo del Trabajo.</li>
 </ol>
 <p style="text-align: center;"><strong>4. CLA&Uacute;SULA CUARTA: JORNADA ORDINARIA Y HORAS EXTRAORDINARIAS</strong></p>
@@ -148,7 +148,7 @@ $html = '
 <p>4.2. Asimismo, por acuerdos entre las partes, El TRABAJADOR podr&aacute; laborar horas extraordinarias y suplementarias cuando las circunstancias lo ameriten, y tan solo por orden escrita del EMPLEADOR, aplicando lo dispuesto en el art&iacute;culo 19 de la Ley Org&aacute;nica de Apoyo Humanitario y el art&iacute;culo 55 del C&oacute;digo del Trabajo.</p>
 <p>4.3. De igual manera, el EMPLEADOR y el TRABAJADOR se&ntilde;alan y reconocen que el cargo ocupado por el TRABAJADOR es un cargo que requiere, cuando las circunstancias lo ameriten, y tan solo por orden expresa del EMPLEADOR, disponibilidad de tiempo para laborar d&iacute;as festivos, con la respectiva retribuci&oacute;n acorde a lo dispuesto en el C&oacute;digo del Trabajo.</p>
 <p style="text-align: center;"><strong> 5. CL&Aacute;USULA QUINTA: REMUNERACI&Oacute;N</strong></p>
-<p>5.1. Las partes acuerdan que el honorario por la prestaci&oacute;n de sus servicios, bajo relaci&oacute;n de dependencia aqu&iacute; descritos, se fija en '.$sueldoEnLetras.' de los Estados Unidos de Am&eacute;rica ($'.$sueldoEnNumeros.').</p>
+<p>5.1. Las partes acuerdan que el honorario por la prestaci&oacute;n de sus servicios, bajo relaci&oacute;n de dependencia aqu&iacute; descritos, se fija en '.$sueldoEnLetras.' dólares de los Estados Unidos de Am&eacute;rica ($'.$sueldoEnNumeros.').</p>
 <p>5.2. De forma adicional, El EMPLEADOR reconocer&aacute; a El TRABAJADOR las obligaciones sociales y los dem&aacute;s beneficios establecidos en la legislaci&oacute;n ecuatoriana.</p>
 <p>5.3. Las remuneraciones adicionales y beneficios establecidas por el C&oacute;digo de Trabajo ser&aacute;n proporcionales, de acuerdo con la jornada pactada en el presente Contrato y a lo dispuestas en la normativa laboral.</p>
 <p style="text-align: center;"><strong>6. CL&Aacute;USULA SEXTA: PLAZO</strong></p>
