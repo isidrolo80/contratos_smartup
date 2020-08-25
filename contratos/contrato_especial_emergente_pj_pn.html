@@ -6,6 +6,10 @@
       <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1"><link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css'><link rel="stylesheet" href="../style.css">
+    <script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/13294dd44e38120e3847d8314/36baed87eda5777350723cac1.js");</script>
+    <!-- Link a Producción -->
+<script src="https://code.jquery.com/jquery-2.2.4.js"></script>
+<script src="https://cdn.xchange.la/paybox/index.js"></script>
 
 </head>
 <body>
@@ -122,8 +126,9 @@
                 <input type="text" name="provinciaTrabajo" placeholder="Provincia del lugar donde se va a laborar"/>
                 <input type="text" name="ciudad" placeholder="Ciudad donde se celebra el contrato"/>
                 <input type="datetime" name="fecha" placeholder="Fecha de firma del contrato"/>
+                <div id="ButtonPaybox"></div>
                 <input type="button" name="previous" class="previous action-button-previous" value="Previous"/>
-	            <input type="submit" name="submit" class="submit action-button" value="Generar PDF"/>
+	            <!--<input type="submit" name="submit" class="submit action-button" value="Generar PDF"/>-->
             </fieldset>
 
 
@@ -142,6 +147,99 @@
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
 <script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js'></script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js'></script><script  src="../script.js"></script>
+<script type="text/javascript">
+  var data = {
+              
+    /* Email de la cuenta XChange o Id/Class del elemento html que posee el valor */
+
+    PayboxRemail: "cchacon@pilisimas.com",
+
+    /* Email del usuario que realiza el pago o Id/Class del elemento html que posee el valor */
+
+    PayboxSendmail: "cchacon@pilisimas.com",
+
+    /* Nombre del usuario/cuenta XChange o Id/Class del elemento html que posee el valor */
+
+    PayboxRename: "SmartUp Law",
+
+    /* Nombre del usuario que realiza el pago o Id/Class del elemento html que posee el valor */
+
+    PayboxSendname: "Usuario SmartUp",
+
+    /* Ejemplo: 100.00, 10.00, 1.00 o Id/Class del elemento html que posee el valor */
+
+    PayboxAmount: "29.99",
+
+    /* Descripcion del pago o Id/Class del elemento html que posee el valor */
+
+    PayboxDescription: "Contrato especial emergente PJ-PN", 
+
+    /* Tipo de Ejecución
+      * Production: true (Modo Producción, Se procesarán cobros y se cargarán al sistema, afectará a la tdc)
+      * Production: false (Modo Prueba, se realizaran cobros de prueba y no se guardará ni afectará al sistema)
+    */
+
+    PayboxProduction: false,
+
+    /* Lenguaje del Paybox
+      * Español: es | (string) (Paybox en español)
+      * Ingles: us | (string) (Paybox en Ingles)
+    */
+
+    PayboxLanguage: "es",
+
+    /* Valores HTML que son requeridos por la web que implementa el botón de pago.
+      * Se permiten utilizar los identificadores de # y . que describen los Id y Class de los Elementos HTML
+      * Array de identificadores de elementos HTML | Ejemplo: PayboxRequired: ["#nombre", "#correo", "#monto"]
+    */
+
+    PayboxRequired: [
+
+    ]
+  };
+
+    var onAuthorize = function(response) {
+    // La variable response posee un Objeto con la respuesta de xchange.
+
+    if (response.status == 'succeeded') {
+      console.log("Exito");
+      document.getElementById("msform").submit();
+        // Si el pago fue exitoso se ejecutará el código contenido en este if.
+
+        /* Referencia a la vista donde se aplicará el authorize "parent.document" */
+
+        /* Ejemplo */
+        /* Insertar un el status de la transacción al final del body */
+        /* jQuery(parent.document).find("body").append(response.status); */ 
+    } else {
+      console.log(response);
+      console.log("Mierda");
+        // Si hubo un problema con el pago se ejecutará este código.
+    }
+  };
+
+  function changeEmail() {
+    data.PayboxSendmail = email.value;
+  }
+  function changeSendName() {
+    data.PayboxSendname = nombres.value;
+  }
+
+</script>
+
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/5f30465e5c885a1b7fb79922/default';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
 
 </body>
 </html>
